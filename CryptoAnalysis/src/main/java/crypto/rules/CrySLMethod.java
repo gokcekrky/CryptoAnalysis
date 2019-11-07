@@ -4,10 +4,10 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map.Entry;
 
-import crypto.interfaces.ICryptSLPredicateParameter;
+import crypto.interfaces.ICrySLPredicateParameter;
 
 
-public class CryptSLMethod implements Serializable, ICryptSLPredicateParameter {
+public class CrySLMethod implements Serializable, ICrySLPredicateParameter {
 	
 	private static final long serialVersionUID = 1L;
 	private final String methodName;
@@ -15,7 +15,7 @@ public class CryptSLMethod implements Serializable, ICryptSLPredicateParameter {
 	private final List<Entry<String, String>> parameters; 
 	private final List<Boolean> backward;
 	
-	public CryptSLMethod(String methName, List<Entry<String, String>> pars, List<Boolean> backw, Entry<String, String> returnObject) {
+	public CrySLMethod(String methName, List<Entry<String, String>> pars, List<Boolean> backw, Entry<String, String> returnObject) {
 		methodName = methName;
 		parameters = pars;
 		backward = backw;
@@ -104,10 +104,10 @@ public class CryptSLMethod implements Serializable, ICryptSLPredicateParameter {
 		if (obj == null) {
 			return false;
 		}
-		if (!(obj instanceof CryptSLMethod)) {
+		if (!(obj instanceof CrySLMethod)) {
 			return false;
 		}
-		CryptSLMethod other = (CryptSLMethod) obj;
+		CrySLMethod other = (CrySLMethod) obj;
 		return this.getMethodName().equals(other.getMethodName()) && parameters.equals(other.parameters);
 	}
 

@@ -2,21 +2,21 @@ package crypto.rules;
 
 import java.io.Serializable;
 
-import crypto.interfaces.ICryptSLPredicateParameter;
+import crypto.interfaces.ICrySLPredicateParameter;
 
 
-public class CryptSLObject implements Serializable, ICryptSLPredicateParameter {
+public class CrySLObject implements Serializable, ICrySLPredicateParameter {
 
 	private static final long serialVersionUID = 1L;
 	private String varName;
 	private String javaType;
-	private CryptSLSplitter splitter;
+	private CrySLSplitter splitter;
 	
-	public CryptSLObject(String name, String type) {
+	public CrySLObject(String name, String type) {
 		this(name, type, null);
 	}
 	
-	public CryptSLObject(String name, String type, CryptSLSplitter part) {
+	public CrySLObject(String name, String type, CrySLSplitter part) {
 		varName = name;
 		javaType = type;
 		splitter = part;
@@ -32,7 +32,7 @@ public class CryptSLObject implements Serializable, ICryptSLPredicateParameter {
 	/**
 	 * @return the splitter
 	 */
-	public CryptSLSplitter getSplitter() {
+	public CrySLSplitter getSplitter() {
 		return splitter;
 	}
 	

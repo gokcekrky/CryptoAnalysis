@@ -3,9 +3,9 @@ package crypto.rules;
 import java.util.List;
 import java.util.Set;
 
-import crypto.interfaces.ICryptSLPredicateParameter;
+import crypto.interfaces.ICrySLPredicateParameter;
 
-public class CryptSLCondPredicate extends CryptSLPredicate {
+public class CrySLCondPredicate extends CrySLPredicate {
 	
 	/**
 	 * 
@@ -13,7 +13,7 @@ public class CryptSLCondPredicate extends CryptSLPredicate {
 	private static final long serialVersionUID = 1L;
 	private final Set<StateNode> conditionalNodes;
 	
-	public CryptSLCondPredicate(ICryptSLPredicateParameter baseObj, String name, List<ICryptSLPredicateParameter> variables, Boolean not, Set<StateNode> label) {
+	public CrySLCondPredicate(ICrySLPredicateParameter baseObj, String name, List<ICrySLPredicateParameter> variables, Boolean not, Set<StateNode> label) {
 		super(baseObj, name, variables, not);
 		conditionalNodes = label;
 	}

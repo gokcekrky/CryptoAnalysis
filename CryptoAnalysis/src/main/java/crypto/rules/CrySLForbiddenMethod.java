@@ -4,24 +4,24 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CryptSLForbiddenMethod implements Serializable{
+public class CrySLForbiddenMethod implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	private CryptSLMethod meth;
+	private CrySLMethod meth;
 	private Boolean silent;// = false;
-	private List<CryptSLMethod> alternate;
+	private List<CrySLMethod> alternate;
 	
-	public CryptSLForbiddenMethod(CryptSLMethod method, Boolean silent) {
-		this(method, silent, new ArrayList<CryptSLMethod>());
+	public CrySLForbiddenMethod(CrySLMethod method, Boolean silent) {
+		this(method, silent, new ArrayList<CrySLMethod>());
 	}
 	
-	public CryptSLForbiddenMethod(CryptSLMethod method, Boolean silent, List<CryptSLMethod> alternatives) {
+	public CrySLForbiddenMethod(CrySLMethod method, Boolean silent, List<CrySLMethod> alternatives) {
 		this.meth = method;
 		this.silent = silent;
 		this.alternate = alternatives;
 	}
 
-	public CryptSLMethod getMethod() {
+	public CrySLMethod getMethod() {
 		return meth;
 	}
 	
@@ -29,7 +29,7 @@ public class CryptSLForbiddenMethod implements Serializable{
 		return silent;
 	}
 	
-	public List<CryptSLMethod> getAlternatives() {
+	public List<CrySLMethod> getAlternatives() {
 		return alternate;
 	}
 	
@@ -41,7 +41,7 @@ public class CryptSLForbiddenMethod implements Serializable{
 			forbMethod.append(" Alternatives: ");
 		}
 		
-		for (CryptSLMethod meth : alternate) {
+		for (CrySLMethod meth : alternate) {
 			forbMethod.append(meth.toString());
 		}
 		
