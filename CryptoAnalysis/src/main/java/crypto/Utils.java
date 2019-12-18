@@ -5,8 +5,8 @@ import java.util.Set;
 
 import com.google.common.collect.Sets;
 
-import crypto.rules.CrySLMethod;
-import crypto.rules.CrySLRule;
+import de.darmstadt.tu.crossing.rules.CrySLMethod;
+import de.darmstadt.tu.crossing.rules.CrySLRule;
 import soot.SootMethod;
 
 public class Utils {

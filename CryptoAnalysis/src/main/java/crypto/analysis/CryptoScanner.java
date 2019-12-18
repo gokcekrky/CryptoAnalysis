@@ -17,7 +17,7 @@ import boomerang.debugger.Debugger;
 import boomerang.jimple.Statement;
 import boomerang.jimple.Val;
 import crypto.predicates.PredicateHandler;
-import crypto.rules.CrySLRule;
+import de.darmstadt.tu.crossing.rules.CrySLRule;
 import crypto.typestate.CrySLMethodToSootMethod;
 import heros.utilities.DefaultValueMap;
 import ideal.IDEALSeedSolver;

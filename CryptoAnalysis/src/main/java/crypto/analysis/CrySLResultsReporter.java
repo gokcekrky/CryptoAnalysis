@@ -16,8 +16,8 @@ import boomerang.results.ForwardBoomerangResults;
 import crypto.analysis.errors.AbstractError;
 import crypto.extractparameter.CallSiteWithParamIndex;
 import crypto.extractparameter.ExtractedValue;
-import crypto.interfaces.ISLConstraint;
-import crypto.rules.CrySLPredicate;
+import de.darmstadt.tu.crossing.interfaces.ISLConstraint;
+import de.darmstadt.tu.crossing.rules.CrySLPredicate;
 import sync.pds.solver.nodes.Node;
 import typestate.TransitionFunction;
 

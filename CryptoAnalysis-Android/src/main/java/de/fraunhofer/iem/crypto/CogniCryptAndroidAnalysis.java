@@ -17,8 +17,8 @@ import crypto.analysis.CrySLResultsReporter;
 import crypto.analysis.CryptoScanner;
 import crypto.analysis.errors.AbstractError;
 import crypto.reporting.CollectErrorListener;
-import crypto.rules.CrySLRule;
-import crypto.rules.CrySLRuleReader;
+import de.darmstadt.tu.crossing.rules.CrySLRule;
+import de.darmstadt.tu.crossing.rules.CrySLRuleReader;
 import soot.Scene;
 import soot.SootClass;
 import soot.SootMethod;
@@ -28,7 +28,7 @@ import soot.jimple.infoflow.android.InfoflowAndroidConfiguration;
 import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.android.config.SootConfigForAndroid;
 import soot.options.Options;
-import crypto.cryslhandler.CrySLModelReader;
+import de.darmstadt.tu.crossing.reader.CrySLModelReader;
 
 public class CogniCryptAndroidAnalysis {
 	public static void main(String... args) {
